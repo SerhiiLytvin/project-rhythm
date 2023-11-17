@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: CalSans;
+  font-display: swap;
+  src: url('../fonts/CalSans-SemiBold.woff') format('woff'), url('../fonts/CalSans-SemiBold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  color: #666;
+}
+
+a {
+ text-decoration: none; 
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------------*/ 
+.page {
+  flex: 1 1 auto;
+}
+
+.page__main {}
+
+/*--------------------------------------*/ 
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+/*--------------------------------------*/ 
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  min-height: 155px;
+  align-items: center;
+}
+.header__logo {
+  margin: 0px 131px 0px 0px;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  &:not(:last-child) {
+    margin: 0px 56px 0px 0px;
+  }
+}
+.menu__link {
+  color: rgba(18, 18, 18, 0.40);
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/*--------------------------------------*/ 
+.main {
+  padding: 0px 0px 80px 0px;
+}
+.main__container {
+  display: flex;
+  border: 1px solid red;
+}
+.main__content {
+  flex: 0 1 50%;
+  align-self: flex-end;
+  padding: 0px 20px 60px 0px;
+}
+.main__title {
+  color: #121212;
+  font-family: Cal Sans;
+  font-size: 56px;
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin: 0px 0px 16px 0px;
+  }
+
+  span {
+    color: #FF6428;
+  }
+}
+.main__text {
+  font-weight: 500;
+  max-width: 420px;
+
+  &:not(:last-child) {
+    margin: 0px 0px 33px 0px;
+  }
+}
+.main__actions {
+  display: flex;
+  align-items: center;
+}
+.actions-main {
+
+}
+.actions-main__button {
+  padding: 18.5px 48px; 
+  background-color: #FF6428;
+  border-radius: 40px;  
+  color: #FFF;
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin: 0px 40px 0px 0px;
+  }
+}
+.actions-main__icon {
+}
+.main__decor {
+  flex: 0 1 50%;
+}
+
+.main__image {
+  margin-right: -135px;
+}
